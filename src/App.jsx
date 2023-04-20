@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Web3 from "web3";
 import {
   CONTRACT_ABI,
@@ -59,7 +59,7 @@ function App() {
   };
 
   return (
-    <div className="bg-green-100 min-h-screen flex justify-center items-center">
+    <div className="bg-sky-100 min-h-screen flex justify-center items-center">
       {account ? (
         <div>
           <div className="text-main font-semibold text-2xl">
@@ -69,7 +69,7 @@ function App() {
               로그아웃
             </button>
           </div>
-          <div className="flex items-center mt-4">
+          <div className="flex items-center mt-4 text-main font-bold">
             {myBalance && <div>{myBalance} tMatic</div>}
             <button className="ml-2 btn-style" onClick={onClickBalance}>
               잔액 조회
